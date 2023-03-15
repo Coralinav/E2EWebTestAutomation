@@ -1,0 +1,22 @@
+{
+    "name": "e2e-web-test-automation",
+    "version": "1.0.0",
+    "description": "This is an automation exercise",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "report": "npx playwright show-report",
+        "test:accountActions": "npx playwright test account_actions.spec.ts --headed",
+        "test:badLogin": "npx playwright test incorrect_login.spec.ts --headed",
+        "test:badSignup": "npx playwright test incorrect_signup.spec.ts --headed"
+    },
+    "keywords": [],
+    "author": "Melanie Navarro",
+    "license": "ISC",
+    "devDependencies": {
+        "@playwright/test": "^1.31.2"
+    },
+    "dependencies": {
+        "node": "^18.14.0"
+    }
+}
